@@ -20,4 +20,8 @@ public abstract class Employee implements Employable {
     public double getSalary() {
         return salary;
     }
+
+    public int getId() {
+        return id;
+    }
 }
