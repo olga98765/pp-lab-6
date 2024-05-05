@@ -24,6 +24,9 @@ public abstract class Employee implements Employable {
     public double getSalary() {
         return salary;
     }
+    public int getId() {
+        return id;
+    }
 
     public String getHireDate() {
         return hireDate;
@@ -32,7 +35,8 @@ public abstract class Employee implements Employable {
     public String getPosition() {
         return position;
     }
-    
+
+
     @Override
     public int hashCode() {
         return id;
