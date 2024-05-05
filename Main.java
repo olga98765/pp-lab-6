@@ -9,6 +9,7 @@ public class Main {
         Worker worker4 = new Worker("John", 2800, 4);
         Manager manager = new Manager("Martin", 8000, 5);
 
+        
         System.out.println("Salary 1: " + worker1.getSalary());
         worker1.work();
         System.out.println("Salary 2: " + worker2.getSalary());
@@ -17,7 +18,7 @@ public class Main {
         worker3.work();
         System.out.println("Salary 4: " + worker4.getSalary());
         worker4.work();
-        System.out.println("Salary 5:" + manager.getSalary());
+        System.out.println("Salary 5: " + manager.getSalary());
         manager.work();
     }
 }
