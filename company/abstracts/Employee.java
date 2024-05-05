@@ -25,6 +25,10 @@ public abstract class Employee implements Employable {
         return salary;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String getHireDate() {
         return hireDate;
     }
@@ -36,5 +40,13 @@ public abstract class Employee implements Employable {
     @Override
     public int hashCode() {
         return id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) return true;
+        if (!(obj instanceof Employee)) return false;
+        Employee other = (Employee) obj;
+        return this.id == other.id;
     }
 }
